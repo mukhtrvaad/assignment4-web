@@ -1,109 +1,92 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create an Account</title>
+    <title>Task 4 - Registration Form</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css?v=2">
 </head>
-
 <body>
 
-    <div class="navbar">
+    <nav class="navbar">
+        <a href="task0.html">Task 0</a>
         <a href="index.html">Task 1</a>
         <a href="task2.html">Task 2</a>
         <a href="task3.html">Task 3</a>
         <a href="task4.html">Task 4</a>
-    </div>
+    </nav>
 
     <div class="container">
-
         <h1>Create an Account</h1>
-        <p>Fill out the registration form below.</p>
 
-        <form id="registrationForm" novalidate>
+        <form class="was-validated">
 
             <div class="row">
-
                 <div class="col-md-6 mb-3">
                     <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control"
-                           id="firstName" name="firstName"
-                           placeholder="Enter your first name" required>
-
+                    <input type="text" id="firstName" name="firstName"
+                           class="form-control" required>
                     <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback">Please enter your first name.</div>
+                    <div class="invalid-feedback">First name is required.</div>
                 </div>
 
                 <div class="col-md-6 mb-3">
                     <label for="lastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control"
-                           id="lastName" name="lastName"
-                           placeholder="Enter your last name" required>
-
+                    <input type="text" id="lastName" name="lastName"
+                           class="form-control" required>
                     <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback">Please enter your last name.</div>
+                    <div class="invalid-feedback">Last name is required.</div>
                 </div>
-
             </div>
 
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control"
-                       id="email" name="email"
-                       placeholder="Enter your email" required>
-
+                <input type="email" id="email" name="email"
+                       class="form-control" required>
                 <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please enter a valid email.</div>
+                <div class="invalid-feedback">Enter a valid email.</div>
             </div>
 
             <div class="row">
-
                 <div class="col-md-6 mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control"
-                           id="password" name="password"
-                           placeholder="Enter password"
-                           minlength="8" required>
-
+                    <input type="password" id="password" name="password"
+                           class="form-control" minlength="8" required>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback">
-                        Password must be at least 8 characters.
+                        Password must contain at least 8 characters.
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-3">
                     <label for="confirmPassword" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control"
-                           id="confirmPassword" name="confirmPassword"
-                           placeholder="Confirm password" required>
-
-                    <div class="valid-feedback">Passwords match!</div>
-                    <div class="invalid-feedback">Passwords must match.</div>
+                    <input type="password" id="confirmPassword"
+                           name="confirmPassword" class="form-control"
+                           minlength="8" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                        Please confirm your password (at least 8 characters).
+                    </div>
                 </div>
-
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Gender</label>
 
                 <div class="form-check">
-                    <input type="radio" class="form-check-input"
-                           id="male" name="gender" value="male" required>
+                    <input type="radio" id="male" name="gender"
+                           class="form-check-input" value="male" required>
                     <label for="male" class="form-check-label">Male</label>
                 </div>
 
                 <div class="form-check">
-                    <input type="radio" class="form-check-input"
-                           id="female" name="gender" value="female">
+                    <input type="radio" id="female" name="gender"
+                           class="form-check-input" value="female" required>
                     <label for="female" class="form-check-label">Female</label>
-                </div>
-
-                <div class="invalid-feedback" id="genderFeedback">
-                    Please select your gender.
+                    <div class="invalid-feedback">Please select a gender.</div>
                 </div>
             </div>
 
@@ -111,107 +94,43 @@
                 <label class="form-label">Hobbies</label>
 
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input"
-                           id="reading" name="hobbies" value="reading">
+                    <input type="checkbox" id="reading" name="hobbies"
+                           class="form-check-input" value="reading">
                     <label for="reading" class="form-check-label">Reading</label>
                 </div>
 
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input"
-                           id="sports" name="hobbies" value="sports">
+                    <input type="checkbox" id="sports" name="hobbies"
+                           class="form-check-input" value="sports">
                     <label for="sports" class="form-check-label">Sports</label>
                 </div>
 
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input"
-                           id="music" name="hobbies" value="music">
+                    <input type="checkbox" id="music" name="hobbies"
+                           class="form-check-input" value="music">
                     <label for="music" class="form-check-label">Music</label>
                 </div>
             </div>
 
             <div class="mb-3">
                 <label for="country" class="form-label">Country</label>
-                <select class="form-select" id="country" name="country" required>
+                <select id="country" name="country"
+                        class="form-select" required>
                     <option value="">Select your country</option>
                     <option value="kazakhstan">Kazakhstan</option>
-                    <option value="usa">Kyrgyzstan</option>
-                    <option value="uk">Uzbekistan</option>
-                    <option value="germany">Turkmenistan</option>
+                    <option value="kyrgyzstan">Kyrgyzstan</option>
+                    <option value="uzbekistan">Uzbekistan</option>
+                    <option value="turkmenistan">Turkmenistan</option>
                 </select>
-
                 <div class="valid-feedback">Looks good!</div>
-                <div class="invalid-feedback">Please select your country.</div>
+                <div class="invalid-feedback">Please select a country.</div>
             </div>
 
             <button type="submit" class="btn btn-dark">Submit</button>
             <button type="reset" class="btn btn-secondary">Reset</button>
 
         </form>
-
     </div>
-
-    
-    <script>
-        const form = document.getElementById("registrationForm");
-
-        form.addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            const password = document.getElementById("password");
-            const confirmPassword = document.getElementById("confirmPassword");
-
-            if (password.value === confirmPassword.value) {
-                confirmPassword.setCustomValidity("");
-            } else {
-                confirmPassword.setCustomValidity("Passwords do not match");
-            }
-
-            const fields = form.querySelectorAll(
-                'input:not([type="radio"]):not([type="checkbox"]), select'
-            );
-
-            fields.forEach(function(field) {
-                if (field.checkValidity()) {
-                    field.classList.add("is-valid");
-                    field.classList.remove("is-invalid");
-                } else {
-                    field.classList.add("is-invalid");
-                    field.classList.remove("is-valid");
-                }
-            });
-
-            const gender = form.querySelectorAll('input[name="gender"]');
-            const genderSelected = form.querySelector('input[name="gender"]:checked');
-            const genderFeedback = document.getElementById("genderFeedback");
-
-            gender.forEach(function(field) {
-                if (genderSelected) {
-                    field.classList.add("is-valid");
-                    field.classList.remove("is-invalid");
-                } else {
-                    field.classList.add("is-invalid");
-                    field.classList.remove("is-valid");
-                }
-            });
-
-            if (genderSelected) {
-                genderFeedback.style.display = "none";
-            } else {
-                genderFeedback.style.display = "block";
-            }
-        });
-
-        form.addEventListener("reset", function() {
-            const fields = form.querySelectorAll("input, select");
-
-            fields.forEach(function(field) {
-                field.classList.remove("is-valid", "is-invalid");
-                field.setCustomValidity("");
-            });
-
-            document.getElementById("genderFeedback").style.display = "none";
-        });
-    </script>
 
 </body>
 </html>
