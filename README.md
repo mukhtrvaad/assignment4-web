@@ -1,14 +1,19 @@
 # Assignment 4 — Forms and Validation
 
-This project contains HTML forms with validation using HTML, CSS, Bootstrap, and JavaScript.
+This project contains five HTML forms created using HTML5, CSS, and Bootstrap 5.
 
 ## Tasks
 
-- **Task 0–1:** Basic contact form with HTML5 validation.
+- **Task 0:** Basic contact form.
+- **Task 1:** Contact form with HTML5 validation.
 - **Task 2:** Contact form styled with Bootstrap.
-- **Task 3:** Form validation using JavaScript and Bootstrap feedback.
-- **Task 4:** Registration form with password confirmation and validation.
+- **Task 3:** Contact form with Bootstrap validation feedback.
+- **Task 4:** Registration form with HTML5 validation and Bootstrap feedback.
 
 ## Technologies
 
-HTML, CSS, Bootstrap 5, JavaScript.
+HTML5, CSS3, Bootstrap 5.
+
+## Live Website
+
+https://mukhtrvaad.github.io/assignment4-web/
