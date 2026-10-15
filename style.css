@@ -31,6 +31,7 @@ body {
     background-color: white;
     border: 1px solid #bbbbbb;
 }
+
 h1 {
     text-align: center;
     font-size: 32px;
@@ -47,6 +48,10 @@ form label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
+}
+
+.form-check-label {
+    font-weight: normal;
 }
 
 input[type="text"],
